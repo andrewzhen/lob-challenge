@@ -46,12 +46,15 @@ h3 {
 
 .mb-2 {
   margin-bottom: 1.25rem; }
+  @media (max-width: 768px) {
+    .mb-2 {
+      margin-bottom: 2rem; } }
 
 .mb-3 {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2.25rem; }
 
 hr {
-  border: 0.1px solid var(--Dove); }
+  border: 1px solid var(--Dove); }
 
 .standard-link {
   color: var(--Cerulean);
@@ -72,20 +75,21 @@ hr {
       order: 2;
       background-color: transparent;
       width: 100%;
-      min-height: auto; } }
+      min-height: 65vw; } }
   .graphic-container__cat {
     position: absolute;
     z-index: 3;
     background-image: url("../assets/images/Cat.png");
-    background-position: 60% 40%;
-    background-size: 65% auto;
+    background-position: 60% calc(46% - 3vw);
+    background-size: calc(30% + 15rem) auto;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%; }
     @media (max-width: 768px) {
       .graphic-container__cat {
-        background-position: 60% 0;
-        height: 30rem; } }
+        background-position: 50% 0;
+        background-size: 70% auto;
+        height: 65vw; } }
   .graphic-container__ground {
     position: absolute;
     top: 50%;
@@ -96,24 +100,27 @@ hr {
     transition: height var(--transition); }
     @media (max-width: 768px) {
       .graphic-container__ground {
-        top: 20vh;
-        height: 50vh; } }
+        top: 40vw;
+        height: calc(60vw + 5rem); } }
 
 .dropdown {
   background-color: var(--White);
   border-radius: 2px;
-  width: 28rem;
+  width: calc(10vw + 15rem);
   padding: 12px 23px;
   box-sizing: border-box;
   position: relative;
-  top: calc(33rem + 15vw);
-  left: calc(50% - 28rem / 2);
+  top: calc(40rem + 3vw);
+  left: calc(50% - (10vw + 15rem) / 2);
   z-index: 5; }
   @media (max-width: 768px) {
     .dropdown {
-      top: calc(15rem + 15vw);
-      width: 22rem;
-      left: calc(50% - 22rem / 2); } }
+      width: 88%;
+      max-width: 33rem;
+      margin: auto;
+      left: 0;
+      top: 75vw;
+      padding: 15px 19px; } }
   .dropdown:hover, .dropdown.hover {
     cursor: pointer; }
     .dropdown:hover .dropdown__list--animated, .dropdown:hover .dropdown__list li, .dropdown.hover .dropdown__list--animated, .dropdown.hover .dropdown__list li {
@@ -125,7 +132,7 @@ hr {
       height: 100%; }
       @media (max-width: 768px) {
         .dropdown:hover + .graphic-container__ground, .dropdown.hover + .graphic-container__ground {
-          height: 100vh; } }
+          height: calc(35vw + 30rem); } }
   .dropdown__header {
     display: flex;
     justify-content: space-between;
@@ -152,11 +159,20 @@ hr {
       padding: 13px 30px;
       opacity: 0;
       pointer-events: auto; }
+      @media (max-width: 768px) {
+        .dropdown__list li {
+          padding: 10px 24px; } }
     .dropdown__list li:first-child {
       padding-top: 34px; }
+      @media (max-width: 768px) {
+        .dropdown__list li:first-child {
+          padding-top: 27px; } }
     .dropdown__list li:nth-child(7) {
       padding-bottom: 34px;
       border-radius: 0 0 2px 2px; }
+      @media (max-width: 768px) {
+        .dropdown__list li:nth-child(7) {
+          padding-bottom: 27px; } }
     .dropdown__list--animated {
       display: none; }
       .dropdown__list--animated li {
@@ -173,6 +189,11 @@ hr {
         width: 2.25rem;
         height: 2.25rem;
         margin-right: 1.5rem; }
+        @media (max-width: 768px) {
+          .dropdown__list__item img {
+            width: 1.85rem;
+            height: 1.85rem;
+            margin-right: 1rem; } }
       .dropdown__list__item p {
         display: inline; }
 
@@ -185,17 +206,30 @@ hr {
     transform: scaleY(1); } }
 .text-container {
   flex: 1 1 50%;
-  padding: 10rem 15rem 10rem 7rem;
+  padding: 9vw 7vw;
   box-sizing: border-box; }
   @media (max-width: 768px) {
     .text-container {
       order: 1;
-      padding: 3rem 1rem;
+      padding: 3rem 1.5rem;
       text-align: center; } }
+  .text-container__header {
+    width: 87%; }
+    @media (max-width: 992px) {
+      .text-container__header {
+        width: 100%; } }
+    @media (max-width: 768px) {
+      .text-container__header {
+        max-width: 33rem;
+        margin: auto; } }
   .text-container__details {
-    width: 85%; }
+    width: 75%; }
+    @media (max-width: 992px) {
+      .text-container__details {
+        width: 84%; } }
     @media (max-width: 768px) {
       .text-container__details {
+        max-width: 25rem;
         margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */
