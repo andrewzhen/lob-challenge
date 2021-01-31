@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Larsseit";
+  src: url("/assets/fonts/Larsseit-Medium.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/Larsseit-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("/assets/fonts/Larsseit-Medium.woff2") format("woff2"), /* Super Modern Browsers */
+       url("/assets/fonts/Larsseit-Medium.woff") format("woff"), /* Pretty Modern Browsers */
+       url('/assets/fonts/Larsseit-Medium.ttf') format("truetype"), /* Safari, Android, iOS */
+       url("/assets/fonts/Larsseit-Medium.svg#svgFontName") format("svg"); /* Legacy iOS */
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Larsseit";
+  src: url("/assets/fonts/Larsseit-Regular.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/Larsseit-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("/assets/fonts/Larsseit-Regular.woff2") format("woff2"), /* Super Modern Browsers */
+       url("/assets/fonts/Larsseit-Regular.woff") format("woff"), /* Pretty Modern Browsers */
+       url('/assets/fonts/Larsseit-Regular.ttf') format("truetype"), /* Safari, Android, iOS */
+       url("/assets/fonts/Larsseit-Regular.svg#svgFontName") format("svg"); /* Legacy iOS */
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Larsseit";
+  src: url("/assets/fonts/Larsseit-Light.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/Larsseit-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("/assets/fonts/Larsseit-Light.woff2") format("woff2"), /* Super Modern Browsers */
+       url("/assets/fonts/Larsseit-Light.woff") format("woff"), /* Pretty Modern Browsers */
+       url('/assets/fonts/Larsseit-Light.ttf') format("truetype"), /* Safari, Android, iOS */
+       url("/assets/fonts/Larsseit-Light.svg#svgFontName") format("svg"); /* Legacy iOS */
+  font-weight: 300;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 16px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 2.625rem;
+  line-height: 1;
+
+  @media (max-width: 768px) {
+    @at-root #{&} {
+      font-size: 2.1875rem;
+    }
+  }
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 27px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 27px;
+}
+
+.text-large {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 27px;
+}
+
+.standard-link {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 27px;
+}

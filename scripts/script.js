@@ -12,6 +12,7 @@ function toggleHover() {
 }
 
 window.onload = function() {
+  console.log("Hi Emily and team! Thanks for your consideration.");
   setToggleHover();
 };
 
